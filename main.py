@@ -1,10 +1,11 @@
-# Meu primeiro projeto Python!!! 
-# Que beleza.
-# print() = comando de saída
-print("Olá Mundo!")
-print("Caraca vei funcionou, que emoção")
-nome = "Mauricio Lourenço de Aguiar"
-print("Meu nome é:",nome)
-idade = 19
-print("minha idade é:",idade)
-# Exibe nome e idade na tela
+# comando input(): quero permitir que o usuario digite algo
+
+nome = input("Digite seu nome: ")
+
+idade = int(input("Digite a sua idade: "))
+# exiba a sua idade é ..
+idade = idade+40
+print ("Seu nome é: "+nome)
+print(f"A sua idade é:{idade} ")
+
+# comando de saída..exibir na tela
