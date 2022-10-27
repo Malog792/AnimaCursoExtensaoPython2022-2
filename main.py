@@ -1,33 +1,12 @@
-# comando input(): quero permitir que o usuario digite algo
+# Pede o nome do aluno e a sua nota ( de 0 a 10) e, se ele tirou nota 10, mostra "Você é brabo"
 
-nome = input("Digite seu nome: \n")
+nome = input("Insira o seu Nome: \n")
+nota = float(input("Digite a sua nota: \n"))
 
-idade = int(input("Digite a sua idade: \n"))
-genero = input("Digite M para genero masculino e F para feminino: \n")
-dobro= idade*2
-# exiba a sua idade é ..
-#idade = idade+40
-print ("Seu nome é: "+nome)
-print ("Seu Gênero é: "+genero)
-print(f"A sua idade é:{idade} ")
-print(f"O dobro da sua idade é: {dobro}")
-
-# comando de saída..exibir na tela
-
-#Estrutura condicional - o if
-# Se a pessoa for maior de idade, mostre 
-#"Você é maior de idade, ótimo"
-
-if idade >= 18 and genero == "M" or "m":
-  print ("Você é maior de idade, ótimo, pode beber ou dirigir \n")
- 
-  print("Você precisa/precisou prestar serviço militar obrigatório")
-
-  
+if nota == 10:
+  print ("Você é brabo")
+elif (nota >=6 and nota < 10):
+  print (f"{nome}, bom trabalho, tava ruim mas podia ser pior")
 else:
-  print("Fique em casa, você deveria estar estudando")
+  print ("Tente um pouco mais na proxima {}".format(nome))
   
-# E se eu quisesse perguntar o gênero (M = masculino e o F = feminino)
-# Mostre (.. e você também precisa/precisou prestar o serviço militar obrigatório)
-
-
